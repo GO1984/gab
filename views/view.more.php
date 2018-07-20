@@ -157,7 +157,7 @@
             $price_from_ath; $price_ath; $price_last;
 
             $a = '<sup>$</sup>' . number_format($price_last['balance']);
-            $b = date('Y-m', strtotime($price_last['date']));
+            $b = date('Y-m-d', strtotime($price_last['date']));
 
 
             $s = $tpl;
@@ -167,7 +167,7 @@
             $str .= $s;
 
             $a = number_format($price_ath['balance']);
-            $b = date('Y-m', strtotime($price_ath['date']));
+            $b = date('Y-m-d', strtotime($price_ath['date']));
 
             $s = $tpl;
             $s = str_replace('_title_','ATH Price/Value',$s);
